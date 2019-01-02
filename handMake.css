@@ -1,0 +1,392 @@
+/* fontawesome */
+[class*="fa"]:before {
+    font-size: 20px;
+    color: whitesmoke;
+
+}
+
+.block {
+    width: 100%;
+}
+
+* {
+    font-family: 'Helvetica Neue', Times, serif
+}
+
+.h1Portfolio,
+.h1Contact {
+    color: rgb(16, 97, 93);
+    width: 200px;
+    margin: auto;
+}
+
+
+/*for header*/
+.section1 {
+    display: flex;
+}
+
+.head {
+    height: 550px;
+    width: 50%;
+}
+
+
+/* for headLeft */
+.headLeft {
+    background-color: rgb(16, 97, 93);
+    background: linear-gradient(135deg, transparent 15px, rgb(16, 97, 93) 0);
+}
+
+.name {
+    color: rgba(236, 236, 33, 0.938);
+    margin-left: 40px;
+}
+
+nav {
+    margin-left: 40px;
+    margin-bottom: 180px;
+}
+
+nav>a {
+    color: whitesmoke;
+    padding-right: 20px;
+    text-decoration: none;
+}
+
+.nameBox {
+    width: 70%;
+    margin-left: auto;
+}
+
+.sayHi {
+    color: rgba(236, 236, 33, 0.938);
+    font-size: 30px;
+    margin: 0;
+}
+
+.h1Name {
+    color: whitesmoke;
+    font-size: 70px;
+    line-height: 60px;
+    margin: 5px 0;
+}
+
+.soCall {
+    color: whitesmoke;
+    font-size: 30px;
+}
+
+
+/* for headRight */
+.headRight {
+    background-image: url(./image/mingBig.JPEG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 100px -100px;
+}
+
+
+/* for section2 */
+.section2 {
+    height: 300px;
+    background-color: rgb(242, 242, 242);
+}
+
+.aboutContainer {
+    width: 400px;
+    margin: auto;
+}
+
+.h1About {
+    color: rgb(16, 97, 93);
+    width: 200px;
+    margin: 20px 100px 20px 100px;
+}
+
+.introduce {
+    width: 300px;
+    font-size: 18px;
+    margin: 0 50px 40px 50px;
+    font-weight: 700;
+    line-height: 190%;
+}
+
+.resumeBtn {
+    width: 150px;
+    padding: 10px;
+    background-color: rgba(236, 236, 33, 0.938);
+    color: rgb(10, 66, 63);
+    font-weight: 700;
+    text-align: center;
+    margin: 0 100px 20px 100px;
+    cursor: pointer;
+}
+
+
+/* for section3 */
+.section3 {
+    height: 450px;
+    background-color: rgb(233, 230, 230);
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    width: 300px;
+    border: 1px solid;
+    margin: 10px;
+    box-shadow: 5px 5px 5px 5px rgb(145, 144, 144);
+}
+
+img {
+    width: 100%;
+}
+
+.cardName {
+    color: rgba(112, 109, 14, 0.938);
+    text-align: center;
+}
+
+list>li {
+    list-style-type: square;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.moreBtn {
+    width: 100px;
+    padding: 10px;
+    background-color: rgba(236, 236, 33, 0.938);
+    color: rgb(10, 66, 63);
+    font-weight: 700;
+    text-align: center;
+    margin: 30px 8% 10px 27%;
+    cursor: pointer;
+}
+
+
+/* for footer */
+footer {
+    display: flex;
+    height: 400px;
+}
+
+footer>div {
+    height: 100%;
+    width: 50%;
+}
+
+.footLeft {
+    background-image: url(./image/sidewalkBig.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footRight {
+    position: relative;
+    background-color: rgb(16, 97, 93);
+    background: linear-gradient(-45deg, transparent 15px, rgb(16, 97, 93) 0);
+}
+
+.howToContact {
+    color: whitesmoke;
+    font-size: 25px;
+    text-align: center;
+}
+
+.howToContact>a {
+    text-decoration: none;
+}
+
+.hire {
+    font-size: 25px;
+    color: rgba(236, 236, 33, 0.938);
+    font-weight: bolder;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    border: 10px solid lightgray;
+    border-top: 10px solid rgba(236, 236, 33, 0.938);
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes reverseSpin {
+    0% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.hireText {
+    width: 100px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    animation: reverseSpin 2s linear infinite;
+}
+
+
+/* for RWD */
+/* PC size */
+@media only screen and (min-width: 992px) {
+    .headRight {
+        background: url(./image/mingSmall.JPEG);
+        background-size: cover;
+        background-position: center 20%;
+        background-repeat: no-repeat;
+    }
+
+    .footLeft {
+        background-image: url(./image/sidewalkSmall.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+
+/* mobile size */
+@media only screen and (max-width: 414px) {
+
+    /*for header*/
+    .section1 {
+        display: block;
+        height: 930px;
+    }
+
+    .head {
+        width: 100%;
+    }
+
+    /* for headLeft */
+    nav {
+        margin-left: 10px;
+        margin-bottom: 110px;
+    }
+
+    nav>a {
+        margin-right: 30%;
+        margin-left: 30%;
+        font-size: 25px;
+    }
+
+    /* for headRight */
+    .headRight {
+        background-image: url(./image/mingBig.JPEG);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center 0%;
+        background-attachment: initial;
+    }
+
+    /* for section2 */
+    .section2 {
+        height: 400px;
+    }
+
+    .aboutContainer {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .h1About {
+        width: 180px;
+        margin: 20px 50px 20px 50px;
+    }
+
+    .introduce {
+        width: 180px;
+        font-size: 20px;
+        margin: 0 50px 40px 50px;
+        font-weight: 700;
+        line-height: 190%;
+    }
+
+    .resumeBtn {
+        width: 200px;
+        padding: 10px;
+        text-align: center;
+        margin: 0 100px 20px 50px;
+        cursor: pointer;
+        font-size: 22px;
+    }
+
+    /* for section3 */
+    .h1Contact{
+        margin-top: 10px;
+    }
+    .section3 {
+        height: 1530px;
+        display: block;
+    }
+    .card {
+        width: 91%;
+        margin: 15px 15px 20px 5px;
+    }
+    .cardName{
+        font-size: 22px;
+    }
+    .list{
+        font-size: 20px;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    /* for footer */
+    footer {
+        display: block;
+        height: 410px;
+    }
+
+    footer>div {
+        height: 100%;
+        width: 100%;
+    }
+
+    .footLeft {
+        background-image: url(./image/sidewalkBig.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .howToContact {
+        margin-top: -10px;
+        font-size: 27px;
+    }
+   
+
+    /* fontawesome */
+    [class*="fa"]:before {
+        font-size: 27px;
+        color: whitesmoke;
+    }
+}
+@media only screen and (max-width: 410px) {
+    .section3 {
+        height: 1460px;
+    }
+}
