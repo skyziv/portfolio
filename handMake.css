@@ -1,4 +1,4 @@
-/* fontawesome */
+/* public */
 [class*="fa"]:before {
     font-size: 20px;
     color: whitesmoke;
@@ -18,6 +18,11 @@
     color: rgb(16, 97, 93);
     width: 200px;
     margin: auto;
+}
+
+.resumeBtn>a, .moreBtn>a{
+    text-decoration: none;
+    color: rgb(10, 66, 63);
 }
 
 
@@ -245,6 +250,29 @@ footer>div {
     border-radius: 50%;
     text-align: center;
     animation: reverseSpin 2s linear infinite;
+}
+
+.goBack{
+    width:52px;
+    height: 50px;
+    position: absolute;
+    bottom: 20px;
+    left: 12px;
+}
+.goBack::before{
+        content: '';
+        width: 0;
+        height: 0;
+        border-width: 20px;
+        border-style: solid;
+        border-color: transparent transparent whitesmoke transparent; 
+}
+.goBack>a{
+    color: whitesmoke;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 24px;
+    margin-left: 1px;
 }
 
 
